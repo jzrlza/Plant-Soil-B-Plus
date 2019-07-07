@@ -1,7 +1,8 @@
 # Plant-Soil-B Plus
 
 Plant-Soil-Buddy the plant, soil, fertilizer recommendation application for Android mobile.
-(Project currently under development)
+
+(Project currently under development, right now there's only Login and Register pages in the application)
 
 ## Getting Started
 
