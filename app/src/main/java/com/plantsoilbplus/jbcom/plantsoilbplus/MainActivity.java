@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         UsernameEt = (EditText)findViewById(R.id.username_edit);
         PasswordEt = (EditText)findViewById(R.id.password_edit);
-
+/*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
     }
 
     public void OnLogin(View view) {
@@ -37,8 +37,9 @@ public class MainActivity extends AppCompatActivity {
         String password = PasswordEt.getText().toString();
         String type = "login";
         Log.e("Login Test",username + ", " + password);
-        //BackgroundWorker backgroundWorker = new BackgroundWorker(this);
-        //backgroundWorker.execute(type, username, password);
+
+        BackgroundWorker backgroundWorker = new BackgroundWorker(this);
+        backgroundWorker.execute(type, username, password);
     }
 
     @Override
