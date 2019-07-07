@@ -1,6 +1,7 @@
-# Project Title
+# Plant-Soil-B Plus
 
-One Paragraph of project description goes here
+Plant-Soil-Buddy the plant, soil, fertilizer recommendation application for Android mobile.
+(Project currently under development)
 
 ## Getting Started
 
@@ -11,7 +12,9 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to install the software and how to install them
 
 ```
-Give examples
+Android Studio (And its prerequisites)
+Wampserver
+ngrok
 ```
 
 ### Installing
@@ -31,6 +34,20 @@ until finished
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
+
+### Extra files
+
+Put ".php" files from [WAMP files folder of this project](https://github.com/jzrlza/Plant-Soil-B-Plus/tree/master/WAMP%20files) into "D:\wamp64\www" or whatever path you have installed Wampserver.
+
+In the same project folder, use the ".sql" file to create the database with the matching name in "localhost/phpmyadmin" of the Wampserver.
+
+### Test update URL
+
+Using ngrok, it provides the hosting server for the project, but the url of it changes every time it runs.
+
+When opening Android Studio of this project, go to "DynamicURL" class, and you can see the static url value there, once you run ngrok, you'll get the random url code to copy it to the url in this class file. Then run and test as you please.
+
+
 
 ## Running the tests
 
@@ -58,7 +75,9 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [...](http://www.google.com) - used
+* [Android Studio](https://developer.android.com/studio) - The development IDE used
+* [Wampserver](https://developer.android.com/studio) - The server and database runner used
+* [Ngrok](https://developer.android.com/studio) - The development web hosting server used
 
 ## Contributing
 
