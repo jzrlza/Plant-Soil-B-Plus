@@ -100,3 +100,4 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc
+* Tutorial and What based on - It was based on the 4 parts tutorial for the login part. [Part 1.](https://www.youtube.com/watch?v=HK515-8-Q_w) [Part 2.](https://www.youtube.com/watch?v=eldh8l8yPew) [Part 3.](https://www.youtube.com/watch?v=UqY4DY2rHOs) [Part 4.](https://www.youtube.com/watch?v=age2l7Rrwtc)
