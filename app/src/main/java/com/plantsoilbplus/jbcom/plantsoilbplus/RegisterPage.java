@@ -23,8 +23,8 @@ public class RegisterPage extends AppCompatActivity {
         String username = UsernameEt2.getText().toString();
         String password = PasswordEt2.getText().toString();
         String password_confirm = ConfirmPasswordEt.getText().toString();
-        String type = "register";
-        Log.e("RegisterTest Test",username + ", " + password+","+password_confirm);
+        String type = "regis";
+        Log.e("RegisterTest Test",username + ", " + password+", "+password_confirm);
 
         BackgroundWorker backgroundWorker = new BackgroundWorker(this);
         backgroundWorker.execute(type, username, password, password_confirm);
