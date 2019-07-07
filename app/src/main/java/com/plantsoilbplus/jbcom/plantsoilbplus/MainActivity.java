@@ -8,15 +8,19 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
-
+    EditText UsernameEt, PasswordEt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        UsernameEt = (EditText)findViewById(R.id.username_edit);
+        PasswordEt = (EditText)findViewById(R.id.password_edit);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -26,6 +30,15 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    public void OnLogin(View view) {
+        String username = UsernameEt.getText().toString();
+        String password = PasswordEt.getText().toString();
+        String type = "login";
+        Log.e("Login Test",username + ", " + password);
+        //BackgroundWorker backgroundWorker = new BackgroundWorker(this);
+        //backgroundWorker.execute(type, username, password);
     }
 
     @Override
