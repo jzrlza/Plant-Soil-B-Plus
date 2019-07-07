@@ -76,8 +76,8 @@ Add additional notes about how to deploy this on a live system
 ## Built With
 
 * [Android Studio](https://developer.android.com/studio) - The development IDE used
-* [Wampserver](https://developer.android.com/studio) - The server and database runner used
-* [Ngrok](https://developer.android.com/studio) - The development web hosting server used
+* [Wampserver](http://www.wampserver.com/en/) - The server and database runner used
+* [Ngrok](https://ngrok.com/) - The development web hosting server used
 
 ## Contributing
 
